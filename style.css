@@ -28,6 +28,45 @@ body {
 /*==================RESET===================*/
 
 
+/*----------GNB--------*/
+.gnb {
+    position: fixed;  /* 화면에 고정 */
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 27%;
+    background: rgba(52, 52, 52, 0.5); 
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    border-radius: 3vw;
+    padding: 0.2em 0.2em;
+
+}
+
+.gnb-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.gnb-menu li {
+    position: relative;
+    cursor: pointer;
+    border-radius: 1vw;
+}
+
+.gnb-menu li a {
+    text-decoration: none;
+    color: #F63A91;
+    padding: 0.5em 1em;
+    display: block;
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+
 
 /*----------지구본--------*/
 #intro-globe {
@@ -978,7 +1017,7 @@ align-items: center; /* 세로 중앙 정렬 */
 
 
 #main13 {
-    height: 200dvh;
+    height: 230dvh;
     width: 100%;
     padding: 5% 5%;
     position: relative;
@@ -1011,6 +1050,8 @@ align-items: center; /* 세로 중앙 정렬 */
     justify-content: center; /* 가로 중앙 */
     align-items: center;     /* 세로 중앙 */
 }
+
+
 .main13_card img {
     position: absolute;
     top: 50%;
@@ -1088,16 +1129,16 @@ align-items: center; /* 세로 중앙 정렬 */
 
 .main14_video {
     display: flex;
-justify-content: flex-start; /* 가로 방향 왼쪽 끝으로 */
-align-items: center; /* 세로 중앙 정렬 */
-    gap: 2%; /* 비디오 간 간격 */
-    margin-top: 3%; /* 텍스트와 비디오 사이 여백 */
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 2%; 
+    margin-top: 3%; 
 }
 
 
 .main14_video .video14 {
-    width: 20%; /* 화면 가로 대비 */
-    max-width: 400px; /* 너무 커지는 것 방지 */
+    width: 20%; 
+    max-width: 400px; 
     height: auto;
 }
 
@@ -1106,7 +1147,7 @@ align-items: center; /* 세로 중앙 정렬 */
     width: 100%;
     padding: 5% 5%;
     position: relative;
-    height: 100dvh;
+    height: 120dvh;
 }
 #main15 .main15_info {
     display: flex;
@@ -1245,18 +1286,28 @@ align-items: center; /* 세로 중앙 정렬 */
 }
 
 #main18 {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    padding: 5% 5%; 
+    margin-top: 5%;         
+}
+#main18 h4 {
+    color: #F63A91;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.video-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;  
-    height: 100vh;           
+    align-items: center;
+    width: 100%;
 }
-
 #gyeobVideo {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
 }
-
 
 
 #main19 {

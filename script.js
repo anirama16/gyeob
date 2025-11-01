@@ -264,6 +264,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const card = document.querySelector('.main13_card');
+
+    // 2. Intersection Observer 옵션을 설정합니다.
+    // threshold: 0.1은 요소가 10% 보였을 때 실행하라는 의미입니다.
+    const options = {
+        threshold: 0.1 
+    };
+
+    // 3. 콜백 함수: 뷰포트에 들어왔을 때 실행될 동작
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            // isIntersecting 속성으로 뷰포트 진입 여부를 확인합니다.
+            if (entry.isIntersecting) {
+                // 뷰포트에 들어왔으면 'is-visible' 클래스를 추가합니다.
+                card.classList.add('is-visible');
+                
+                // [중요] 한 번 실행된 후에는 더 이상 감시할 필요가 없으므로 감시를 중지합니다.
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+
+
+
+
+
+
+
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", e => {
