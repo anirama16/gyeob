@@ -1244,40 +1244,61 @@ align-items: center; /* 세로 중앙 정렬 */
     height: auto;
 }
 
-
-
-
-
 #main18 {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;           
+}
+
+#gyeobVideo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+
+
+#main19 {
+    width: 100%;
     height: 100vh;
-    padding: 5% 5%; 
-    margin-top: 5%;
+    padding: 5%;
+    margin: 0; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0076;
 }
 
-#main18 p {
-    color: white;
-    font-size: 5vw;
+#main19 img {
+    width: 70%;
+    height: auto; /* 비율 유지 */
+    display: block;
+    object-fit: contain;
+    margin-left: 5vw;
 }
 
+/* main20 */
 #main20 {
     position: relative;
     width: 100%;
-    height: auto; 
-    padding: 5% 5%; 
-    margin-top: 5%;
-
-    display: flex;           /* 추가 */
-    justify-content: center; /* 가로 중앙 */
-    align-items: center;     /* 세로 중앙 */
-    flex-direction: column;  /* 세로로 쌓이게 */
+    padding: 5%;
+    margin: 0; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #main20 img {
-    width: 80%;
-    padding: 3em;
+    max-width: 80%; 
+    height: auto;    
+    display: block;
+    padding: 3em 0;
+    object-fit: contain;
 }
-
-
 
 
 

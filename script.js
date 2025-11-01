@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const sec = entry.target;
         const videos = Array.from(sec.querySelectorAll('video'));
         const animatables = Array.from(sec.querySelectorAll('[data-animate]'));
-
+        if (sec.id === 'main18') return;
         if (entry.isIntersecting) {
             animatables.forEach(el => {
             el.classList.add('play');
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (videos.length) {
             pauseAllOutside(sec);
 
-if (videos.length) {
+    if (videos.length) {
     pauseAllOutside(sec);
 
     // 모든 비디오 초기화
@@ -247,7 +247,19 @@ if (videos.length) {
 })();
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('gyeobVideo');
 
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      // 소리 허용
+      video.muted = false;  
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+});
 
 
 
