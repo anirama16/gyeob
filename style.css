@@ -34,7 +34,7 @@ body {
     top: 2%;
     left: 50%;
     transform: translateX(-50%);
-    width: 27%;
+    width: 25%;
     background: rgba(52, 52, 52, 0.5); 
     z-index: 100;
     display: flex;
@@ -63,7 +63,7 @@ body {
     color: #F63A91;
     padding: 0.5em 1em;
     display: block;
-    font-size: 1.25vw;
+    font-size: 1.1vw;
     font-weight: 600;
 }
 
@@ -957,7 +957,7 @@ svg {
 }
 
 .main11_box video {
-    width: 90%;
+    width: 65%;
     height: auto;
 }
 
@@ -1094,6 +1094,7 @@ align-items: center; /* 세로 중앙 정렬 */
     padding: 5% 5%;
     position: relative;
     height: 100dvh;
+    margin-top: 6vw;
 }
 
 
