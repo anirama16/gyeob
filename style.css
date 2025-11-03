@@ -686,7 +686,7 @@ svg {
 }
 
 #main7 video {
-    width: 20%;
+    width: 22%;
     margin-top: 0;
     padding: 1em;
     padding-left: 0;
@@ -857,7 +857,7 @@ svg {
     width: 100%;
     display: block;
     z-index: 1;
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 .main10_mockup {
@@ -942,6 +942,7 @@ svg {
     width: 95%;
     height: auto;
     margin-top: 5vw;
+    animation: float 3s ease-in-out infinite alternate;
 }
 
 /* 오른쪽 비디오 박스 */
@@ -952,7 +953,7 @@ svg {
     border-radius: 3vw;
     padding: 4vw;
     display: flex;
-    align-items: flex-end; /* 비디오를 박스 아래쪽으로 */
+    align-items: flex-end; 
     justify-content: center;
 }
 
@@ -1026,15 +1027,15 @@ align-items: center; /* 세로 중앙 정렬 */
 
 
 #main13 .main13_info {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: -0.03em;
 }
 .main13_info p {
     margin-top: 1%;
-    color: white;
-    font-weight: 100;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
     font-size: 1.2vw;
     letter-spacing: -0.03em;
 
@@ -1311,24 +1312,23 @@ align-items: center; /* 세로 중앙 정렬 */
 }
 
 
+
+
+
 #main19 {
     width: 100%;
     height: 100vh;
-    padding: 5%;
     margin: 0; 
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF0076;
 }
 
 #main19 img {
-    width: 70%;
-    height: auto; /* 비율 유지 */
+    width: 100%;
+    height: auto; 
     display: block;
-    object-fit: contain;
-    margin-left: 5vw;
 }
 
 /* main20 */
