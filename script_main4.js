@@ -24,34 +24,37 @@ function calcCenter() {
 function getStartPositions(center) {
     return [
         {x: center.x - 400, y: center.y - 200},
-        {x: center.x + 1000, y: center.y},
+        {x: center.x + 1500, y: center.y},
         {x: center.x - 400, y: center.y + 1300},
         {x: center.x + 300, y: center.y - 300},
-        {x: center.x - 800, y: center.y - 100},
-        {x: center.x + 300, y: center.y + 1300},
+        {x: center.x - 1300, y: center.y - 100},
+        {x: center.x + 200, y: center.y + 300},
         {x: center.x, y: center.y - 300},
         {x: center.x, y: center.y + 1300},
         {x: center.x + 1000, y: center.y + 1300},
-        {x: center.x, y: center.y - 300},
+        {x: center.x + 1000, y: center.y + 100},
+        {x: center.x, y: center.y + 300},
+        {x: center.x, y: center.y + 300},
+        {x: center.x, y: center.y + 300}
     ];
 }
 
 // 이미지 크기
 const boxScales = [
-    { start: 1, end: 0.4 }, 
+    { start: 2, end: 0.4 }, 
     { start: 0.5, end: 0.02 }, 
-    { start: 1, end: 0.3 },
-    { start: 1, end: 0.5 }, 
-    { start: 1, end: 0.02 }, 
-    { start: 1, end: 0.2 },
-    { start: 1, end: 0.3 }, 
-    { start: 1, end: 0.05 }, 
-    { start: 1, end: 0.5 },
-    { start: 1, end: 0.3 },
-    { start: 1, end: 0.3 },
-    { start: 1, end: 0.3 },
-    { start: 1, end: 0.3 },
-    { start: 1, end: 0.5 },
+    { start: 2.5, end: 0.45 },
+    { start: 2, end: 0.5 }, 
+    { start: 1, end: 0.01 }, 
+    { start: 2, end: 0.3 },
+    { start: 3, end: 0.3 }, 
+    { start: 2, end: 0.02 }, 
+    { start: 2, end: 0.5 },
+    { start: 1.5, end: 0.3 },
+    { start: 2, end: 0.3 },
+    { start: 2, end: 0.3 },
+    { start: 2, end: 0.5 },
+    { start: 2, end: 0.5 },
 ];
 
 const rotateStart = 0.65;  // 이미지 회전 시작 비율

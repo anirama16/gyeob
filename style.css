@@ -690,7 +690,7 @@ svg {
     margin-top: 0;
     padding: 1em;
     padding-left: 0;
-    margin-right: 3%;
+    margin-right: 2.5%;
 }
 
 #video2 {
@@ -1145,39 +1145,217 @@ align-items: center; /* 세로 중앙 정렬 */
 }
 
 
-#main15 {
+
+
+
+
+
+    #main15 {
     width: 100%;
     padding: 5% 5%;
     position: relative;
     height: 120dvh;
-}
-#main15 .main15_info {
     display: flex;
-    flex-direction: column; /* 세로로 쌓기 */
-    align-items: center;    /* 가로 중앙 정렬 */
-    justify-content: center; /* 세로 중앙 정렬 (필요시) */
-    text-align: center;     /* 텍스트 중앙 정렬 */
-}
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    }
 
-#main15 h4 {
+    #main15 .main15_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    #main15 h4 {
     color: #F63A91;
     font-size: 2rem;
     font-weight: 400;
-    
-}
+    }
 
-#main15 p {
+    #main15 p {
     color: white;
     font-weight: 100;
     font-size: 1vw;
     letter-spacing: -0.03em;
     margin-bottom: 3vw;
     margin-top: 0.5vw;
+    }
+
+    #main15 img {
+        margin-right: 3vw;
+    }
+
+
+
+
+
+/*뱃지애니메이션---------------------*/
+#main15 .badge_wrapper {
+    position: absolute;
+    width: 20vw; 
+    height: 20vw; 
+    animation: float 1.5s ease-in-out infinite alternate; 
 }
-#main15 img {
-    margin-top: 3vw;
-    width: 95%;
+
+#main15 .badge_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
 }
+
+
+#main15 .badge_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: visible;
+}
+
+
+#main15 .badge_face.back {
+    transform: rotateY(180deg);
+}
+
+#main15 .badge_face img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+/*---대만------*/
+#main15 .badge1 { top: 60%; left: 78%; z-index: 1; }
+#main15 .badge1 .badge_inner {
+    animation: spinY 7s linear infinite; 
+}
+#main15 .badge1 .badge_face img { 
+    transform: translate(-50%,-50%) rotate(-20deg); 
+    width: 60%;
+}
+
+/*---스위스------*/
+#main15 .badge7 { top: 53%; left: 60%; z-index: 4; }
+#main15 .badge7 .badge_inner {
+    animation: spinY 7s linear infinite;
+    animation-delay: 0.1s; 
+}
+#main15 .badge7 .badge_face img { 
+    transform: translate(-50%,-50%) rotate(17deg); 
+    width: 55%;
+}
+
+/*---서울------*/
+#main15 .badge2 { top: 50%; left: 17%; z-index: 9; }
+#main15 .badge2 .badge_inner {
+    animation: spinY 7s linear infinite;
+    animation-delay: 0.2s; 
+}
+#main15 .badge2 .badge_face img { 
+    transform: translate(-50%,-50%) rotate(-12deg); 
+    width: 39%;
+}
+
+/*---부산------*/
+#main15 .badge3 { top: 38%; left: 2%; z-index: 8; }
+#main15 .badge3 .badge_inner {
+    animation: spinY 7s linear infinite;
+    animation-delay: 0.3s; 
+}
+#main15 .badge3 .badge_face img { 
+    transform: translate(-50%,-50%) rotate(10deg); 
+    width: 70%;
+}
+
+/*---도쿄------*/
+#main15 .badge4 { top: 28%; left: 10%; z-index: 7; }
+#main15 .badge4 .badge_inner {
+    animation: spinY 7s linear infinite;
+    animation-delay: 0.4s; 
+}
+#main15 .badge4 .badge_face img { 
+    transform: translate(-50%,-50%) rotate(-10deg); 
+    width: 58%;
+}
+
+/*---제주------*/
+#main15 .badge5 { top: 35%; left: 54.8%; z-index: 6; }
+#main15 .badge5 .badge_inner {
+    animation: spinY 7s linear infinite;
+    animation-delay: 0.5s; 
+}
+#main15 .badge5 .badge_face img { 
+    transform: translate(-50%,-50%) rotate(25deg); 
+    width: 51%;
+}
+
+/*---일본-----*/
+#main15 .badge6 { top: 20%; left: 70%; z-index: 5; }
+#main15 .badge6 .badge_inner {
+    animation: spinY 7s linear infinite;
+    animation-delay: 0.6s; 
+}
+#main15 .badge6 .badge_face img { 
+    transform: translate(-50%,-50%) rotate(10deg); 
+    width: 70%;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes spinY {
+    0%   { transform: rotateY(0deg); }
+    22.8%  { transform: rotateY(0deg); }
+    25.7%  { transform: rotateY(20deg); }
+    28.5%  { transform: rotateY(180deg); }
+    45.7%  { transform: rotateY(180deg); }
+    48.5%  { transform: rotateY(200deg); }
+    51.4%  { transform: rotateY(360deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+
+/* 'float' 애니메이션 (상하 이동) */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        /* 떠오르는 높이 (현재 20px 위로) */
+        transform: translateY(-20px); /*--- 부유 높이 조절 ---*/
+    }
+}
+
+@keyframes spinY {
+    0%   { transform: rotateY(0deg); }
+    40%  { transform: rotateY(20deg); }
+
+    45%  { transform: rotateY(60deg); }
+
+    50%  { transform: rotateY(180deg); }
+
+    80%  { transform: rotateY(200deg); }
+
+    85%  { transform: rotateY(220deg); }
+
+    90%  { transform: rotateY(360deg); }
+
+    100% { transform: rotateY(360deg); }
+}
+
+
 
 
 
