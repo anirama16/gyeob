@@ -41,20 +41,20 @@ function getStartPositions(center) {
 
 // 이미지 크기
 const boxScales = [
-    { start: 2, end: 0.4 }, 
-    { start: 0.5, end: 0.02 }, 
-    { start: 2.5, end: 0.45 },
     { start: 2, end: 0.5 }, 
-    { start: 1, end: 0.01 }, 
-    { start: 2, end: 0.3 },
-    { start: 3, end: 0.3 }, 
-    { start: 2, end: 0.02 }, 
+    { start: 0.5, end: 0.04 }, 
+    { start: 2.5, end: 0.6 },
+    { start: 2, end: 0.7 }, 
+    { start: 1, end: 0.05 }, 
     { start: 2, end: 0.5 },
-    { start: 1.5, end: 0.3 },
-    { start: 2, end: 0.3 },
-    { start: 2, end: 0.3 },
+    { start: 3, end: 0.5 }, 
+    { start: 2, end: 0.1 }, 
+    { start: 2, end: 0.7 },
+    { start: 1.5, end: 0.5 },
     { start: 2, end: 0.5 },
     { start: 2, end: 0.5 },
+    { start: 2, end: 0.7 },
+    { start: 2, end: 0.6 },
 ];
 
 const rotateStart = 0.65;  // 이미지 회전 시작 비율
